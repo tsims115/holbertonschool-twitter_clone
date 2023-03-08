@@ -15,15 +15,13 @@ class CustomEntryField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 240,
       margin: const EdgeInsets.symmetric(vertical: 15),
       decoration: BoxDecoration(
-        
         borderRadius: BorderRadius.circular(30),
         color: Colors.grey.shade200,
-        
         border: Border.all(
           color: Colors.blue
-          
         )
       ),
       padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -33,7 +31,6 @@ class CustomEntryField extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hint,
           border: InputBorder.none,
-          
         ),
       )
     );

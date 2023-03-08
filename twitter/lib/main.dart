@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:twitter/screens/signin_screen.dart';
 
 void main() {
+  
   runApp(const MyApp());
 }
 
@@ -10,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      home: SignIn()
     );
   }
 }
