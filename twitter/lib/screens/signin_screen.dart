@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter/screens/home_screen.dart';
 import 'package:twitter/widgets/entry_field.dart';
 import 'package:twitter/widgets/flat_button.dart';
 import 'package:twitter/screens/signup_screen.dart';
@@ -61,7 +62,7 @@ class SignInState extends State<SignIn> {
               onPressed: () => {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const SideBarMenu())
+                  MaterialPageRoute(builder: (context) => const HomeScreen())
                 )
               },
             ),

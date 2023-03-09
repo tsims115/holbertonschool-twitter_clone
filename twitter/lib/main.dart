@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:twitter/providers/app_state.dart';
+import 'package:twitter/screens/home_screen.dart';
 import 'package:twitter/screens/signin_screen.dart';
 
 void main() {
@@ -11,8 +14,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SignIn()
+    return MultiProvider(
+      providers: [
+        Provider<AppState>(create: (_) => AppState())
+      ],
+      child: const MaterialApp(
+          home: SignIn()
+        ),
     );
   }
 }

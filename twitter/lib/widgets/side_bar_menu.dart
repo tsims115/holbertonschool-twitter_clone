@@ -11,12 +11,7 @@ class SideBarMenuState extends State<SideBarMenu> {
   
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Home'),
-      ),
-      drawer: Drawer(
+    return Drawer(
         child: ListView(
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
@@ -129,16 +124,6 @@ class SideBarMenuState extends State<SideBarMenu> {
             ),
           ],
         ),
-      ),
-      body: Center(
-        child: Column(
-          children: const [
-            SizedBox(
-              height: 50,
-            ),
-          ],
-        ),
-      ),
     );
   }
 }
